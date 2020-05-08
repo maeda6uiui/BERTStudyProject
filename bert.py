@@ -10,7 +10,7 @@ config=None
 model=None
 bert_tokenizer=None
 
-def Setup():
+def Init():
     global juman
     juman=Juman(jumanpp=True)
 
@@ -18,7 +18,7 @@ def Setup():
     global model
     global bert_tokenizer
     config=BertConfig.from_json_file(
-    "/home/maeda/Documents/Laboratory/Japanese_L-24_H-1024_A-16_E-30_BPE_WWM/bert_config.json")
+        "/home/maeda/Documents/Laboratory/Japanese_L-24_H-1024_A-16_E-30_BPE_WWM/bert_config.json")
     model=BertForMaskedLM.from_pretrained(
         "/home/maeda/Documents/Laboratory/Japanese_L-24_H-1024_A-16_E-30_BPE_WWM/pytorch_model.bin",config=config)
     bert_tokenizer=BertTokenizer(
@@ -62,7 +62,7 @@ def Predict(text):
     print(predicted_tokens)
 
 if __name__=="__main__":
-    Setup()
+    Init()
 
     text=sys.stdin.readline()
     text=text.rstrip()
