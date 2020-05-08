@@ -1,4 +1,3 @@
-import numpy as np
 import sys
 import torch
 from transformers import BertTokenizer,BertForMaskedLM,BertConfig
