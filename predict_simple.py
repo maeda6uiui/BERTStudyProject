@@ -46,14 +46,14 @@ def Predict(text):
     tokenized_text.append("[SEP]")
     tokenized_text[masked_index]="[MASK]"
 
-    tokens=bert_tokenizer.convert_tokens_to_ids(tokenized_text)
-    tokens_tensor=torch.tensor([tokens])
+    input_ids=bert_tokenizer.convert_tokens_to_ids(tokenized_text)
+    input_ids_tensor=torch.tensor([input_ids])
 
-    tokens_tensor=tokens_tensor.to("cpu")
+    input_ids_tensor=input_ids_tensor.to("cpu")
     model.to("cpu")
 
     with torch.no_grad():
-        outputs=model(tokens_tensor)
+        outputs=model(input_ids_tensor)
         predictions=outputs[0]
 
     _,predicted_indexes=torch.topk(predictions[0,masked_index],k=5)
