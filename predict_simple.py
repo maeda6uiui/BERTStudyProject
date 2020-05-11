@@ -9,7 +9,7 @@ config=None
 model=None
 bert_tokenizer=None
 
-def Init():
+def init():
     global juman
     juman=Juman(jumanpp=True)
 
@@ -26,7 +26,7 @@ def Init():
 
     model.eval()
 
-def Predict(text):
+def predict(text):
     result=juman.analysis(text)
 
     mrph_list=result.mrph_list()
@@ -61,8 +61,8 @@ def Predict(text):
     print(predicted_tokens)
 
 if __name__=="__main__":
-    Init()
+    init()
 
     text=sys.stdin.readline()
     text=text.rstrip()
-    Predict(text)
+    predict(text)
