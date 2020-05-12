@@ -44,7 +44,11 @@ if __name__=="__main__":
 
   print("text: ",end="")
   text=input()
-  print("question: ",end="")
-  question=input()
 
-  qa(question,text)
+  while True:
+    print("question: ",end="")
+    question=input()
+    if question=="exit":
+      break
+
+    qa(question,text)
