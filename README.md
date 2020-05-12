@@ -29,6 +29,8 @@ With over 5.3 million inhabitants as of 2018, it is the fourth-most populous cit
 An important Russian port on the Baltic Sea, it has a status of a federal subject (a federal city).
 ```
 
+[Saint Petersburg](https://en.wikipedia.org/w/index.php?title=Saint_Petersburg&oldid=955987618)
+
 ### 問題と解答
 
 ```
