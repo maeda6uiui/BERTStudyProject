@@ -2,21 +2,11 @@
 
 BERTの勉強用プロジェクト
 
+# Todo
+
+[aio_test.py](./aio_test.py)を完成させる。
+
 # 実行結果メモ
-
-## predict_simple.py
-
-```
-日本の首都は*です。
-['東京', '大阪', '京都', '名古屋', '神戸']
-```
-
-## predict_simple_en.py
-
-```
-* is the capital city of Japan.
-['tokyo', 'osaka', 'nagoya', 'kyoto', 'nagasaki']
-```
 
 ## question_answering_en.py
 
@@ -28,7 +18,7 @@ Saint Petersburg, formerly known as Petrograd (1914–1924), then Leningrad (192
 
 [Saint Petersburg](https://en.wikipedia.org/w/index.php?title=Saint_Petersburg&oldid=955987618)
 
-### 問題と解答
+### 問題と解答の例
 
 ```
 What is the former name of Saint Petersburg during the period from 1924 to 1991?
@@ -40,13 +30,19 @@ What is the largest city in Russia?
 moscow 
 ```
 
-```
-What is the population of Saint Petersburg as of 2018?
-5 . 3 million 
-```
+## predict_simple_en.py
 
 ```
-What city has the largest population in the world?
-moscow
+* is the capital city of Japan.
+['tokyo', 'osaka', 'nagoya', 'kyoto', 'nagasaki']
 ```
+
+## predict_simple.py
+
+```
+日本の首都は*です。
+['東京', '大阪', '京都', '名古屋', '神戸']
+```
+
+
 
