@@ -20,7 +20,7 @@ def init():
         "/home/maeda/Documents/Laboratory/Japanese_L-24_H-1024_A-16_E-30_BPE_WWM/bert_config.json")
     model=BertForMaskedLM.from_pretrained(
         "/home/maeda/Documents/Laboratory/Japanese_L-24_H-1024_A-16_E-30_BPE_WWM/pytorch_model.bin",config=config)
-    bert_tokenizer=BertTokenizer(
+    bert_tokenizer=BertTokenizer.from_pretrained(
         "/home/maeda/Documents/Laboratory/Japanese_L-24_H-1024_A-16_E-30_BPE_WWM/vocab.txt",
         do_lower_case=False,do_basic_tokenize=False)
 
