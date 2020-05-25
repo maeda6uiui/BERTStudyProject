@@ -2,10 +2,6 @@
 
 BERTの勉強用プロジェクト
 
-# Todo
-
-[aio_test.py](./aio_test.py)を完成させる。
-
 # 実行結果メモ
 
 ## question_answering_en.py
