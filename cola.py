@@ -172,6 +172,11 @@ def train(model,train_dataloader):
         print("train lossの平均値: {:.2f}".format(avg_train_loss))
         print("このepochの経過時間: {}".format(training_time))
 
+    print("訓練終了")
+    
+    print("モデルを保存中......")
+    torch.save(model.state_dict(),"pytorch_model.bin")
+
 def validation(model,val_dataloader):
     print("検証中......")
 
@@ -211,9 +216,7 @@ def validation(model,val_dataloader):
     print("validation lossの平均値: {:.2f}".format(avg_val_loss))
     print("検証にかかった時間: {}".format(validation_time))
 
-    print("訓練終了")
-
-    torch.save(model.state_dict(),"pytorch_model.bin")
+    print("検証終了")
 
 #def test(model,test_dataloader):
 #   テストデータを用いてテストを行う。
