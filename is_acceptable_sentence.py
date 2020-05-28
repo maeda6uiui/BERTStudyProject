@@ -18,6 +18,7 @@ def init():
     global tokenizer
     global model
 
+    #cola_finetuning.pyでファインチューニングされたモデルを使用する。
     config=BertConfig.from_json_file("./Model/bert_config.json")
     tokenizer=BertTokenizer.from_pretrained(
         "./Model/vocab.txt",
